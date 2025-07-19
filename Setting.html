@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Berita</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js"></script>
+</head>
+<body class="bg-white p-6 space-y-4">
+  <h2 class="text-xl font-bold">📝 Tambah Berita</h2>
+  <form id="uploadForm" class="space-y-3">
+    <input type="text" id="judul" placeholder="Judul Berita" class="border w-full p-2 rounded" required />
+    <textarea id="konten" placeholder="Isi Berita" class="border w-full p-2 rounded" required></textarea>
+    <input type="file" id="gambar" accept="image/*" class="w-full" required />
+    <button class="bg-blue-600 text-white px-4 py-2 rounded">Upload</button>
+  </form>
+</body>
+<script type="module" src="script.js"></script>
+</html>
